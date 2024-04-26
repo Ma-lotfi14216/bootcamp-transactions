@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="transaction">
+      <div class="nav-search">
+        <span class="nav-search__title">لیست تراکنش ها</span>
+        <form class="nav-search__search-box">
+          <input type="text" class="search-box" placeholder="جستجوی تراکنش" />
+          <span class="search-icon">
+            <img src="../assets/img/Search.png" alt="" />
+          </span>
+        </form>
+      </div>
+      <button class="transaction-btn">بارگزاری تراکنش ها</button>
+      <div class="table-container">
+        <span class="table-container__title">لیست تراکنش های شما</span>
+        <div class="transaction-table">
+          <div class="transaction-table__header">
+            <span>ردیف</span>
+            <span class="transaction-type">نوع تراکنش</span>
+            <span class="transaction-price" data-id-sort="1">
+              <span>مبلغ</span>
+              <i class="price-inc fas fa-chevron-up"></i>
+            </span>
+            <span class="transaction-refId">شماره پیگیری</span>
+            <span class="transaction-date" data-id-sort="2">
+              <span>تاریخ تراکنش</span>
+              <i class="date-inc fas fa-chevron-up"></i>
+            </span>
+          </div>
+          <div class="transactions-table__sections"></div>
+          <!-- <div class="transaction-table__section">
+            <span>ردیف</span>
+            <span class="transaction-type">نوع تراکنش</span>
+            <span class="transaction-price">مبلغ</span>
+            <span class="transaction-refId">شماره پیگیری</span>
+            <span class="transaction-date">تاریخ تراکنش</span>
+          </div>
+          <div class="transaction-table__section">
+            <span>ردیف</span>
+            <span>نوع تراکنش</span>
+            <span>مبلغ</span>
+            <span>شماره پیگیری</span>
+            <span>تاریخ تراکنش</span>
+          </div>
+           -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
